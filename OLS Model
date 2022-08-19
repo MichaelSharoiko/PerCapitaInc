@@ -1,0 +1,25 @@
+-Estimating a OLS model using stargazer-
+
+Stategrowth<-lm(growth~capinc1929, data=percapita)
+> stargazer(Stategrowth,type="text",title="State Growth",digits=5)
+
+State Growth
+===============================================
+                        Dependent variable:    
+                    ---------------------------
+                              growth           
+-----------------------------------------------
+capinc1929                  -0.00121***        
+                             (0.00010)         
+                                               
+Constant                    5.91931***         
+                             (0.06577)         
+                                               
+-----------------------------------------------
+Observations                    49             
+R2                            0.76489          
+Adjusted R2                   0.75989          
+Residual Std. Error      0.16534 (df = 47)     
+F Statistic          152.91010*** (df = 1; 47) 
+===============================================
+Note:               *p<0.1; **p<0.05; ***p<0.01
