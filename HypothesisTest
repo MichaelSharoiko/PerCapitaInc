@@ -1,0 +1,23 @@
+-Testing if the model shows convergence at the 1% level of significance-
+
+the null and alternative hypothesis:
+
+H0: B2>0
+H1: B2<0
+
+The convergence hypothesis specifies a specific sign of the slope.
+if B2 is negative, then the lower the income is per capita in 1929,
+the faster is growth from 1929 to 2018. This signifies an inverse
+relationship so we will use a one-tailed test.
+
+t=(-.00121)/.00010=-12.1
+
+the one-tailed, 1% critical value for the T-distribution with 46 degrees of freedom is:
+> qt(.01,47)
+[1] -2.408345
+
+Since the t statistic is beyond the critical statistic of 2.041, 
+we can reject the null that the slope is equal or greater than zero. 
+We accept the alternative hypothesis which is that there is convergence in the data.
+This makes sense that it is convergence because there is a negative 
+relationship between per cap income and the growth rate.
