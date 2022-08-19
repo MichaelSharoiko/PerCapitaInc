@@ -1,0 +1,8 @@
+-This is the R code for the scatter graph showing the slope and intercept-
+
+> percapita<-read.csv("Income Per Capita.csv",header=TRUE)
+> capinc1929<-percapita$percapitainc1929
+> growth<-percapita$Growth
+> attach(percapita)
+> plot(capinc1929,growth,main="Growth in Per Capita Income From 1929 to 2018",xlab="Per Capita Income in 1929",ylab="Growth Rate in Percent")
+> abline(lm(growth~capinc1929))
